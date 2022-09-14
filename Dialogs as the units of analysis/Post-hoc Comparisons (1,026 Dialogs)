@@ -1,0 +1,92 @@
+> simCI(fit_a, contrast = "pairwise", contmat = NULL, type = "Tukey", base = 1, interaction = FALSE, factor = "Gender", silent = FALSE)
+
+ #------ Call -----# 
+ 
+ - Contrast:  Tukey 
+ - Confidence level: 95 % 
+
+ #------Multivariate post-hoc comparisons: p-values -----# 
+ 
+  contrast p.value
+1    2 - 1  0.3669
+2    3 - 1  0.2203
+3    3 - 2  0.8704
+
+ #-----------Confidence intervals for summary effects-------------# 
+ 
+      Estimate       Lower       Upper
+2 - 1   -0.010 -0.02724075 0.007240748
+3 - 1   -0.014 -0.03355423 0.005554233
+3 - 2   -0.004 -0.02271773 0.014717729
+> simCI(fit_a, contrast = "pairwise", contmat = NULL, type = "Tukey", base = 1, interaction = FALSE, factor = "Education", silent = FALSE)
+
+ #------ Call -----# 
+ 
+ - Contrast:  Tukey 
+ - Confidence level: 95 % 
+
+ #------Multivariate post-hoc comparisons: p-values -----# 
+ 
+   contrast p.value
+1 3-1 - 2-2  0.9998
+2 3-2 - 2-2  0.8966
+3 3-3 - 2-2  0.9911
+4 3-2 - 3-1  0.9822
+5 3-3 - 3-1  0.9911
+6 3-3 - 3-2  0.8785
+
+ #-----------Confidence intervals for summary effects-------------# 
+ 
+          Estimate       Lower      Upper
+3-1 - 2-2   -0.001 -0.03583449 0.03383449
+3-2 - 2-2   -0.006 -0.02825633 0.01625633
+3-3 - 2-2    0.004 -0.03092913 0.03892913
+3-2 - 3-1   -0.005 -0.03973227 0.02973227
+3-3 - 3-1    0.005 -0.03894349 0.04894349
+3-3 - 3-2    0.010 -0.02482719 0.04482719
+> simCI(fit_b, contrast = "pairwise", contmat = NULL, type = "Tukey", base = 1, interaction = FALSE, factor = "Gender", silent = FALSE)
+
+ #------ Call -----# 
+ 
+ - Contrast:  Tukey 
+ - Confidence level: 95 % 
+
+ #------Multivariate post-hoc comparisons: p-values -----# 
+ 
+  contrast p.value
+1    2 - 1  0.8791
+2    3 - 1  0.2823
+3    3 - 2  0.5210
+
+ #-----------Confidence intervals for summary effects-------------# 
+ 
+      Estimate       Lower      Upper
+2 - 1   -0.013 -0.07463353 0.04863353
+3 - 1   -0.047 -0.11819349 0.02419349
+3 - 2   -0.034 -0.10563171 0.03763171
+> simCI(fit_b, contrast = "pairwise", contmat = NULL, type = "Tukey", base = 1, interaction = FALSE, factor = "Education", silent = FALSE)
+
+ #------ Call -----# 
+ 
+ - Contrast:  Tukey 
+ - Confidence level: 95 % 
+
+ #------Multivariate post-hoc comparisons: p-values -----# 
+ 
+   contrast p.value
+1 3-1 - 2-2  0.8582
+2 3-2 - 2-2  0.7695
+3 3-3 - 2-2  0.9981
+4 3-2 - 3-1  0.9988
+5 3-3 - 3-1  0.8825
+6 3-3 - 3-2  0.8614
+
+ #-----------Confidence intervals for summary effects-------------# 
+ 
+          Estimate       Lower      Upper
+3-1 - 2-2   -0.036 -0.15393125 0.08193125
+3-2 - 2-2   -0.031 -0.11446799 0.05246799
+3-3 - 2-2    0.007 -0.12006835 0.13406835
+3-2 - 3-1    0.005 -0.11149059 0.12149059
+3-3 - 3-1    0.043 -0.10782944 0.19382944
+3-3 - 3-2    0.038 -0.08773244 0.16373244
